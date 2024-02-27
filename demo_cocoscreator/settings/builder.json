@@ -1,0 +1,45 @@
+{
+  "excludeScenes": [
+    "41080328-d4b1-46a5-a0d9-6c38bb39886f"
+  ],
+  "orientation": {
+    "landscapeLeft": false,
+    "landscapeRight": false,
+    "portrait": true,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "startScene": "c82d0a5c-56e5-4d66-97e2-db4d5749ca77",
+  "title": "AnyThinkSDKDemo",
+  "webOrientation": "auto",
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "mergeStartScene": false,
+  "optimizeHotUpdate": false,
+  "md5Cache": true,
+  "encryptJs": true,
+  "xxteaKey": "ef6dfdc6-2ade-4b",
+  "zipCompressJs": true,
+  "fb-instant-games": {},
+  "android": {
+    "packageName": "org.cocos2d.demo"
+  },
+  "ios": {
+    "packageName": "com.anythink.AnyThinkSDKDemo"
+  },
+  "mac": {
+    "packageName": "org.cocos2d.demo"
+  },
+  "win32": {},
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "org.cocos2d.demo",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false
+}

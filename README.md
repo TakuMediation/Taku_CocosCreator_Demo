@@ -20,6 +20,6 @@ The development environment requirements:
 
 If you have any questions or issues, you can contact us at:
 
-| Technical Support    | support@toponad.com  |
+| Technical Support    | support@takuad.com  |
 | -------------------- | -------------------- |
-| Business Cooperation | business@toponad.com |
+| Business Cooperation | business@takuad.com |

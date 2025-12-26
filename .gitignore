@@ -1,14 +1,108 @@
-.architect
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
-build/
-classic.json
-classic.jsonp
-ext/
-modern.json
-modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
+# ========================
+# Cocos Creator .gitignore
+# ========================
+
+# Cocos Creator 生成的缓存和临时文件
+/library/
+/local/
+/temp/
+/build/
+/profiles/
+
+# 构建输出目录
+/build-templates/
+/native/
+
+# 日志文件
+*.log
+npm-debug.log*
+
+# ========================
+# 依赖目录
+# ========================
+node_modules/
+
+# ========================
+# 系统文件
+# ========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# ========================
+# IDE 和编辑器
+# ========================
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs (WebStorm, IntelliJ IDEA 等)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.#*
+
+# ========================
+# 其他
+# ========================
+
+# 压缩文件
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# TypeScript 编译输出
+*.js.map
+
+# 测试覆盖率
+coverage/
+
+# 打包分析
+.bundleanalysis/
+

@@ -1,25 +1,23 @@
-# Taku_CocosCreator_Demo
+# TaKu-Cocos-Demo
 
-## Overview
+---
 
-TaKu is a leading advertising aggregation platform that enables publishers to maximize their revenue by connecting with a diverse range of advertisers. With serving over 10 thousands publishers and over 30 billion users worldwide, TaKu is one of the largest independent advertising platforms globally at present. You can read more about it [here](https://help.takuad.com/en/docs/mSI16D).
+## Connect us
 
-## Documentation
+Official website ： [https://takuad.com/](https://takuad.com/)
 
-Please check out our [documentation](https://help.takuad.com/en/docs/9Xhkol) to get started on integrating and enabling mediated networks using our guides.
+---
 
-## Demo
+## Requirements
 
-This demo shows how to integrate the TaKu SDK into your application and provides the source code to demonstrate how to use some basic functions of the TaKu API.
+To ensure smooth compilation and successful execution of this Demo, we recommend using the following editor versions:  
 
-The development environment requirements:
-- CocosCreator v3.4.1
+1. Cocos Creator `v3.8.4`  
+2. Android Studio `2024.x`  
+3. Xcode `v16.0-v16.2`
 
+## Integration guide
 
-## Support
+[https://help.takuad.com/docs/cocoscreator](https://help.takuad.com/docs/cocoscreator)
 
-If you have any questions or issues, you can contact us at:
-
-| Technical Support    | support@takuad.com  |
-| -------------------- | -------------------- |
-| Business Cooperation | business@takuad.com |
+---

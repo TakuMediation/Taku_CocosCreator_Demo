@@ -1,0 +1,186 @@
+{
+  "ver": "2.3.14",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e",
+  "files": [
+    "__original-animation-0.bin"
+  ],
+  "subMetas": {
+    "53398": {
+      "importer": "gltf-material",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@53398",
+      "displayName": "",
+      "id": "53398",
+      "name": "grass.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ef5e1": {
+      "importer": "gltf-mesh",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@ef5e1",
+      "displayName": "",
+      "id": "ef5e1",
+      "name": "grass.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 77
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73b7f": {
+      "importer": "gltf-animation",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@73b7f",
+      "displayName": "",
+      "id": "73b7f",
+      "name": "Take 001.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.3333332538604736
+        },
+        "events": []
+      },
+      "ver": "1.0.18",
+      "imported": true,
+      "files": [
+        ".bin"
+      ],
+      "subMetas": {}
+    },
+    "438fe": {
+      "importer": "gltf-skeleton",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@438fe",
+      "displayName": "",
+      "id": "438fe",
+      "name": "UnnamedSkeleton.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 6
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9787f": {
+      "importer": "texture",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@9787f",
+      "displayName": "",
+      "id": "9787f",
+      "name": "grass.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/model/helloWorld/grass/grass.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3022b": {
+      "importer": "gltf-scene",
+      "uuid": "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@3022b",
+      "displayName": "",
+      "id": "3022b",
+      "name": "grass.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "grass",
+        "uri": "db://assets/model/helloWorld/grass/grass.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "Take 001",
+        "duration": 3.3333332538604736,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "Take 001",
+            "from": 0,
+            "to": 3.3333332538604736,
+            "wrapMode": 2,
+            "previousId": "73b7f"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@ef5e1"
+      ],
+      "skeletons": [
+        "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@438fe"
+      ],
+      "textures": [
+        "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@9787f"
+      ],
+      "materials": [
+        "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@53398"
+      ],
+      "scenes": [
+        "897bc4bb-41f4-4de5-a79f-1d4e2e0b7f0e@3022b"
+      ]
+    }
+  }
+}

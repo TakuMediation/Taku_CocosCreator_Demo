@@ -110,16 +110,14 @@ export class AutoLoadAdsSceneScript extends Component {
     }
 
     public showAutoRewardedAds(): void {
-        ATRewardedVideoAutoAdSDK.entryAdScenario(Constant.AutoRewardedPlacementId, Constant.YourScenarioId)
         if (ATRewardedVideoAutoAdSDK.hasAdReady(Constant.AutoRewardedPlacementId)) {
-            ATRewardedVideoAutoAdSDK.showAdInScenario(Constant.AutoRewardedPlacementId, Constant.YourScenarioId);
+            ATRewardedVideoAutoAdSDK.showAd(Constant.AutoRewardedPlacementId, Constant.YourScenarioId);
         }
     }
 
     public showAutoInterstitialAds(): void {
-        ATInterstitialAutoAdSDK.entryAdScenario(Constant.AutoInterPlacementId, Constant.YourScenarioId);
         if (ATInterstitialAutoAdSDK.hasAdReady(Constant.AutoInterPlacementId)) {
-            ATInterstitialAutoAdSDK.showAdInScenario(Constant.AutoInterPlacementId, Constant.YourScenarioId);
+            ATInterstitialAutoAdSDK.showAd(Constant.AutoInterPlacementId, Constant.YourScenarioId);
         }
     }
 

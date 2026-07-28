@@ -109,7 +109,7 @@ export const ATInterstitialSDK = {
     setAdListener: function (listener: any) {
         const eventJSON = {};
         eventJSON[LoadedCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdLoaded", eventJSON[LoadFailCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdLoadFail", eventJSON[PlayStartCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdStartPlayingVideo", eventJSON[PlayEndCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdEndPlayingVideo", eventJSON[PlayFailCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdFailedToPlayVideo", eventJSON[CloseCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdClose", eventJSON[ClickCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdClick", eventJSON[ShowCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdShow", eventJSON[ShowFailCallbackKey] = "ATInterstitialSDK.ATInterstitialListener.onInterstitialAdFailedToShow", //added v5.8.10
-            eventJSON[BiddingAttempt] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingAttempt", eventJSON[BiddingFilled] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingFilled", eventJSON[BiddingFail] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingFail", eventJSON[Attemp] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceAttemp", eventJSON[LoadFilled] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceLoadFilled", eventJSON[LoadFail] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceLoadFail"
+            eventJSON[BiddingAttempt] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingAttempt", eventJSON[BiddingFilled] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingFilled", eventJSON[BiddingFail] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceBiddingFail", eventJSON[Attemp] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceAttemp", eventJSON[LoadFilled] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceLoadFilled", eventJSON[AdSourceLoadFailKey] = "ATInterstitialSDK.ATInterstitialListener.onAdSourceLoadFail"
 
         if (undefined != platformBridge) {
             platformBridge.setAdListener(JSON.stringify(eventJSON));
@@ -174,6 +174,9 @@ const CloseCallbackKey = "InterstitialClose";
 const ClickCallbackKey = "InterstitialClick";
 const ShowCallbackKey = "InterstitialAdShow";
 const ShowFailCallbackKey = "InterstitialAdShowFail";
+
+/** 广告源维度加载失败，与 LoadFailCallbackKey（广告位维度）区分，避免同 key 覆盖 */
+const AdSourceLoadFailKey = "InterstitialAdSourceLoadFail";
 
 const BiddingAttempt = "InterstitialBiddingAttempt";
 const BiddingFilled = "InterstitialBiddingFilled";

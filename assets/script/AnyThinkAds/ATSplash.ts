@@ -83,9 +83,17 @@ export const ATSplashSDK = {
 
     setAdListener: function (listener: any) {
         const eventJSON = {};
-        eventJSON[LoadedCallbackKey] = " ATSplashSDK.ATSplashListener.onSplashAdLoaded", eventJSON[LoadFailCallbackKey] = " ATSplashSDK.ATSplashListener.onSplashAdLoadFail", eventJSON[CloseCallbackKey] = " ATSplashSDK.ATSplashListener.onSplashAdClose", eventJSON[ClickCallbackKey] = " ATSplashSDK.ATSplashListener.onSplashAdClick", eventJSON[ShowCallbackKey] = " ATSplashSDK.ATSplashListener.onSplashAdShow",
-
-            eventJSON[BiddingAttempt] = " ATSplashSDK.ATSplashListener.onAdSourceBiddingAttempt", eventJSON[BiddingFilled] = " ATSplashSDK.ATSplashListener.onAdSourceBiddingFilled", eventJSON[BiddingFail] = " ATSplashSDK.ATSplashListener.onAdSourceBiddingFail", eventJSON[Attemp] = " ATSplashSDK.ATSplashListener.onAdSourceAttemp", eventJSON[LoadFilled] = " ATSplashSDK.ATSplashListener.onAdSourceLoadFilled", eventJSON[LoadFail] = " ATSplashSDK.ATSplashListener.onAdSourceLoadFail"
+        eventJSON[LoadedCallbackKey] = "ATSplashSDK.ATSplashListener.onSplashAdLoaded";
+        eventJSON[LoadFailCallbackKey] = "ATSplashSDK.ATSplashListener.onSplashAdLoadFail";
+        eventJSON[CloseCallbackKey] = "ATSplashSDK.ATSplashListener.onSplashAdClose";
+        eventJSON[ClickCallbackKey] = "ATSplashSDK.ATSplashListener.onSplashAdClick";
+        eventJSON[ShowCallbackKey] = "ATSplashSDK.ATSplashListener.onSplashAdShow";
+        eventJSON[BiddingAttempt] = "ATSplashSDK.ATSplashListener.onAdSourceBiddingAttempt";
+        eventJSON[BiddingFilled] = "ATSplashSDK.ATSplashListener.onAdSourceBiddingFilled";
+        eventJSON[BiddingFail] = "ATSplashSDK.ATSplashListener.onAdSourceBiddingFail";
+        eventJSON[Attemp] = "ATSplashSDK.ATSplashListener.onAdSourceAttemp";
+        eventJSON[LoadFilled] = "ATSplashSDK.ATSplashListener.onAdSourceLoadFilled";
+        eventJSON[AdSourceLoadFailKey] = "ATSplashSDK.ATSplashListener.onAdSourceLoadFail";
 
         if (undefined != platformBridge) {
             platformBridge.setAdListener(JSON.stringify(eventJSON));
@@ -150,6 +158,7 @@ const BiddingFilled = "SplashBiddingFilled";
 const BiddingFail = "SplashBiddingFail";
 const Attemp = "SplashAttemp";
 const LoadFilled = "SplashLoadFilled";
-const LoadFail = "SplashLoadFail";
+/** 广告源维度加载失败，与 LoadFailCallbackKey（广告位维度）区分，避免同 key 覆盖 */
+const AdSourceLoadFailKey = "SplashAdSourceLoadFail";
 
 window["ATSplashSDK"] = ATSplashSDK;

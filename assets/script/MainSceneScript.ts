@@ -203,9 +203,8 @@ export class MainSceneScript extends Component {
     }
 
     public showRewardedAd(): void {
-        ATRewardedVideoSDK.entryAdScenario(Constant.RewardedPlacementId, Constant.YourScenarioId);
         if (ATRewardedVideoSDK.hasAdReady(Constant.RewardedPlacementId)) {
-            ATRewardedVideoSDK.showAdInScenario(Constant.RewardedPlacementId, Constant.YourScenarioId);
+            ATRewardedVideoSDK.showAd(Constant.RewardedPlacementId, Constant.YourScenarioId);
         } else {
             ATRewardedVideoSDK.loadAd(Constant.RewardedPlacementId);
             this.setAdStatusText(this.btnRewarded, "Ad is loading...");
@@ -213,9 +212,8 @@ export class MainSceneScript extends Component {
     }
 
     public showInterstitialAd(): void {
-        ATInterstitialSDK.entryAdScenario(Constant.InterPlacementId, Constant.YourScenarioId);
         if (ATInterstitialSDK.hasAdReady(Constant.InterPlacementId)) {
-            ATInterstitialSDK.showAdInScenario(Constant.InterPlacementId, Constant.YourScenarioId);
+            ATInterstitialSDK.showAd(Constant.InterPlacementId, Constant.YourScenarioId);
         } else {
             ATInterstitialSDK.loadAd(Constant.InterPlacementId);
             this.setAdStatusText(this.btnInter, "Ad is loading...");
@@ -224,9 +222,8 @@ export class MainSceneScript extends Component {
 
     public showBannerAd(): void {
         let label = this.btnBanner.node.getChildByName("Label").getComponent(cc.Label);
-        ATBannerSDK.entryAdScenario(Constant.BannerPlacementId, Constant.YourScenarioId);
         if (this.isBannerShow && ATBannerSDK.hasAdReady(Constant.BannerPlacementId)) {
-            ATBannerSDK.showAdInPositionAndScenario(Constant.BannerPlacementId, ATBannerSDK.kATBannerAdShowingPositionBottom, Constant.YourScenarioId);
+            ATBannerSDK.showAdInPosition(Constant.BannerPlacementId, ATBannerSDK.kATBannerAdShowingPositionBottom, Constant.YourScenarioId);
             this.isBannerShow = false;
             label.string = "Remove Banner Ad";
         } else {
@@ -245,7 +242,6 @@ export class MainSceneScript extends Component {
     }
 
     public showNativeAd(): void {
-        ATNativeSDK.entryAdScenario(Constant.NativePlacementId, Constant.YourScenarioId);
         if (ATNativeSDK.hasAdReady(Constant.NativePlacementId)) {
 
             const windowSize = cc.screen.windowSize;
@@ -273,7 +269,7 @@ export class MainSceneScript extends Component {
             nativeAdViewProperty.dislike = nativeAdViewProperty.createItemViewProperty(parentWidth - appIconSize / 2, 0, appIconSize / 2, appIconSize / 2, "#00ffffff", "#ffffff", 14);
             nativeAdViewProperty.elements = nativeAdViewProperty.createItemViewProperty(0, parentHeight - appIconSize / 2, parentWidth, appIconSize / 2, "#7f000000", "#ffffff", 14)
 
-            ATNativeSDK.showAdInScenario(Constant.NativePlacementId, nativeAdViewProperty, Constant.YourScenarioId);
+            ATNativeSDK.showAd(Constant.NativePlacementId, nativeAdViewProperty, Constant.YourScenarioId);
         } else {
             ATNativeSDK.loadAd(Constant.NativePlacementId);
             this.setAdStatusText(this.btnNative, "Ad is loading...");
@@ -281,7 +277,6 @@ export class MainSceneScript extends Component {
     }
 
     public showSplashAd(): void {
-        ATSplashSDK.entryAdScenario(Constant.SplashPlacementId, Constant.YourScenarioId);
         if (ATSplashSDK.hasAdReady(Constant.SplashPlacementId)) {
             ATSplashSDK.showAd(Constant.SplashPlacementId);
         } else {

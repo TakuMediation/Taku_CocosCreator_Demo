@@ -132,7 +132,7 @@ export const ATBannerSDK = {
             eventJSON[BiddingFail] = "ATBannerSDK.ATBannerListener.onAdSourceBiddingFail",
             eventJSON[Attemp] = "ATBannerSDK.ATBannerListener.onAdSourceAttemp",
             eventJSON[LoadFilled] = "ATBannerSDK.ATBannerListener.onAdSourceLoadFilled",
-            eventJSON[LoadFail] = "ATBannerSDK.ATBannerListener.onAdSourceLoadFail"
+            eventJSON[AdSourceLoadFailKey] = "ATBannerSDK.ATBannerListener.onAdSourceLoadFail"
 
         if (undefined != platformBridge) {
             platformBridge.setAdListener(JSON.stringify(eventJSON));
@@ -261,6 +261,7 @@ const BiddingFilled = "BannerBiddingFilled";
 const BiddingFail = "BannerBiddingFail";
 const Attemp = "BannerAttemp";
 const LoadFilled = "BannerLoadFilled";
-const LoadFail = "BannerLoadFail";
+/** 广告源维度加载失败，与 LoadFailCallbackKey（广告位维度）区分，避免同 key 覆盖 */
+const AdSourceLoadFailKey = "BannerAdSourceLoadFail";
 
 window["ATBannerSDK"] = ATBannerSDK;

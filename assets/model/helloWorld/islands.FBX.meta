@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.14",
+  "ver": "2.3.13",
   "importer": "fbx",
   "imported": true,
   "uuid": "0b62c8a4-f7be-4108-94fc-2d9494315dd6",
@@ -87,7 +87,7 @@
       "name": "tree1-2.mesh",
       "userData": {
         "gltfIndex": 2,
-        "triangleCount": 587
+        "triangleCount": 586
       },
       "ver": "1.1.1",
       "imported": true,
@@ -123,7 +123,7 @@
       "name": "tree1-4.mesh",
       "userData": {
         "gltfIndex": 4,
-        "triangleCount": 437
+        "triangleCount": 436
       },
       "ver": "1.1.1",
       "imported": true,
@@ -141,7 +141,7 @@
       "name": "tree1-5.mesh",
       "userData": {
         "gltfIndex": 5,
-        "triangleCount": 587
+        "triangleCount": 586
       },
       "ver": "1.1.1",
       "imported": true,
@@ -159,7 +159,7 @@
       "name": "tree1-7.mesh",
       "userData": {
         "gltfIndex": 7,
-        "triangleCount": 587
+        "triangleCount": 586
       },
       "ver": "1.1.1",
       "imported": true,

@@ -161,7 +161,7 @@ export const ATRewardedVideoSDK =  {
             eventJSON[BiddingFail] = "ATRewardedVideoSDK.ATRewardedVideoListener.onAdSourceBiddingFail",
             eventJSON[Attemp] = "ATRewardedVideoSDK.ATRewardedVideoListener.onAdSourceAttemp",
             eventJSON[LoadFilled] = "ATRewardedVideoSDK.ATRewardedVideoListener.onAdSourceLoadFilled",
-            eventJSON[LoadFail] = "ATRewardedVideoSDK.ATRewardedVideoListener.onAdSourceLoadFail",
+            eventJSON[AdSourceLoadFailKey] = "ATRewardedVideoSDK.ATRewardedVideoListener.onAdSourceLoadFail",
             //added v5.8.10 playAgain listener
             eventJSON[AgainPlayStartCallbackKey] = "ATRewardedVideoSDK.ATRewardedVideoListener.onRewardedVideoAdAgainPlayStart",
             eventJSON[AgainPlayEndCallbackKey] = "ATRewardedVideoSDK.ATRewardedVideoListener.onRewardedVideoAdAgainPlayEnd",
@@ -232,7 +232,8 @@ const BiddingFilled = "RewardedVideoBiddingFilled";
 const BiddingFail = "RewardedVideoBiddingFail";
 const Attemp = "RewardedVideoAttemp";
 const LoadFilled = "RewardedVideoLoadFilled";
-const LoadFail = "RewardedVideoLoadFail";
+/** 广告源维度加载失败，与 LoadFailCallbackKey（广告位维度）区分，避免同 key 覆盖 */
+const AdSourceLoadFailKey = "RewardedVideoAdSourceLoadFail";
 
 const AgainPlayStartCallbackKey = "RewardedVideoAgainPlayStart";
 const AgainPlayEndCallbackKey = "RewardedVideoAgainPlayEnd";

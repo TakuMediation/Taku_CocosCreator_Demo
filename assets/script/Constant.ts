@@ -17,16 +17,16 @@ export class Constant {
 
     public static init() {
         if (sys.os === sys.OS.ANDROID) {
-            Constant.APPID = 'a62b013be01931';
-            Constant.APPKEY = 'c3d0d2a9a9d451b07e62b509659f7c97';
-            Constant.DebugKEY = 'ca1122ad6236476c3becda427059750dbe22ab0b';
-            Constant.RewardedPlacementId = 'b62ecb800e1f84';
-            Constant.InterPlacementId = 'b62b028b61c800';
-            Constant.BannerPlacementId = 'b62b01a36e4572';
-            Constant.NativePlacementId = 'b6305efb12d408';
-            Constant.AutoRewardedPlacementId = 'b62ecb800e1f84';
-            Constant.AutoInterPlacementId = 'b62b028b61c800';
-            Constant.SplashPlacementId = 'b62b0272f8762f';
+            Constant.APPID = 'a5aa1f9deda26d';
+            Constant.APPKEY = '4f7b9ac17decb9babec83aac078742c7';
+            Constant.DebugKEY = 'abbfb0a2699ff81561f6905a5c8585275fc166c4';
+            Constant.RewardedPlacementId = 'b5b449fb3d89d7';
+            Constant.InterPlacementId = 'b5baca53984692';
+            Constant.BannerPlacementId = 'b5baca4f74c3d8';
+            Constant.NativePlacementId = 'b5aa1fa2cae775';
+            Constant.AutoRewardedPlacementId = 'b5b449fb3d89d7';
+            Constant.AutoInterPlacementId = 'b5baca53984692';
+            Constant.SplashPlacementId = 'b5bea7cc9a4497';
         } else if (sys.os === sys.OS.IOS) {
             Constant.APPID = 'a5b0e8491845b3';
             Constant.APPKEY = '7eae0567827cfe2b22874061763f30c9';

@@ -16,6 +16,8 @@ const platformBridge = initPlatformBridge();
 
 export const ATSDK = {
 
+    ATSDK_VERSION_NAME: "1.1.2",
+
     kATUserLocationUnknown: 0,
     kATUserLocationInEU: 1,
     kATUserLocationOutOfEU: 2,

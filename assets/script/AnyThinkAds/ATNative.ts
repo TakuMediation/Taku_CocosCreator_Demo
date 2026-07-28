@@ -96,7 +96,7 @@ export const ATNativeSDK = {
     setAdListener: function (listener: any) {
         const eventJSON = {};
         eventJSON[LoadedCallbackKey] = "ATNative.ATNativeListener.onNativeAdLoaded", eventJSON[LoadFailCallbackKey] = "ATNative.ATNativeListener.onNativeAdLoadFail", eventJSON[CloseCallbackKey] = "ATNative.ATNativeListener.onNativeAdCloseButtonTapped", eventJSON[ClickCallbackKey] = "ATNative.ATNativeListener.onNativeAdClick", eventJSON[ShowCallbackKey] = "ATNative.ATNativeListener.onNativeAdShow", eventJSON[VideoStartKey] = "ATNative.ATNativeListener.onNativeAdVideoStart", eventJSON[VideoEndKey] = "ATNative.ATNativeListener.onNativeAdVideoEnd", //added v5.8.10
-            eventJSON[BiddingAttempt] = "ATNative.ATNativeListener.onAdSourceBiddingAttempt", eventJSON[BiddingFilled] = "ATNative.ATNativeListener.onAdSourceBiddingFilled", eventJSON[BiddingFail] = "ATNative.ATNativeListener.onAdSourceBiddingFail", eventJSON[Attemp] = "ATNative.ATNativeListener.onAdSourceAttemp", eventJSON[LoadFilled] = "ATNative.ATNativeListener.onAdSourceLoadFilled", eventJSON[LoadFail] = "ATNative.ATNativeListener.onAdSourceLoadFail"
+            eventJSON[BiddingAttempt] = "ATNative.ATNativeListener.onAdSourceBiddingAttempt", eventJSON[BiddingFilled] = "ATNative.ATNativeListener.onAdSourceBiddingFilled", eventJSON[BiddingFail] = "ATNative.ATNativeListener.onAdSourceBiddingFail", eventJSON[Attemp] = "ATNative.ATNativeListener.onAdSourceAttemp", eventJSON[LoadFilled] = "ATNative.ATNativeListener.onAdSourceLoadFilled", eventJSON[AdSourceLoadFailKey] = "ATNative.ATNativeListener.onAdSourceLoadFail"
 
         if (undefined != platformBridge) {
             platformBridge.setAdListener(JSON.stringify(eventJSON));
@@ -252,5 +252,6 @@ const BiddingFilled = "NativeBiddingFilled";
 const BiddingFail = "NativeBiddingFail";
 const Attemp = "NativeAttemp";
 const LoadFilled = "NativeLoadFilled";
-const LoadFail = "NativeLoadFail";
+/** 广告源维度加载失败，与 LoadFailCallbackKey（广告位维度）区分，避免同 key 覆盖 */
+const AdSourceLoadFailKey = "NativeAdSourceLoadFail";
 window["ATNative"] = ATNativeSDK;
